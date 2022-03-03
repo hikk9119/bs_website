@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.page_title {
+	color: black;
+}
+#customer_interview {
+	width: 1000px;
+	margin: 0 auto 50px;
+	display: table;
+}
+
+.interview_summary {
+	width: 1000px; height: 200px;
+	display: table-row;
+}
+
+.interview_summary img {
+	display: table-cell;
+	width: 180px; height: 170px;
+	margin: 20px 5px;
+}
+
+.interview_summary section {
+	width: 800px; height: 200px;
+	text-align: left;
+	vertical-align: top;
+	display: table-cell;
+	margin: 0px 5px 20px;
+	overflow: hidden;
+}

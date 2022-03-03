@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/html5_doctor.css">
+<link rel="stylesheet" type="text/css" href="../css/base.css">
+<link rel="stylesheet" type="text/css" href="../css/sub_menu_top.css">
+<link rel="stylesheet" type="text/css" href="../css/inquiry_est.css">
+<title>견적 관련 문의</title>
+<script type="text/javascript">
+	var category = getElementById("product_category");
+	var sub_category = getElementById("product_category_sub");
+	if(category.value == "전체솔루션"){
+		var values = ["옵션1","옵션2","옵션3"];
+		for(var i=0; i<values.length; i++){
+			var options = document.creatElement('option');
+			options.value = values[i];
+			sub_category.appendChild(options);
+		}
+	}
+</script>
+</head>
+<body>
+	<!-- header -->
+	<header id="header">
+		<div id="top" class="inner">
+			<table id="righttop">
+				<tr>
+					<td>
+						<form action="" method="">
+							<label for="search"><img alt="돋보기" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Search_Icon.svg" width="20px" height="20px"></label>
+							<input type="text" id="search" size="12" value="검색">
+						</form>
+					</td>
+					<td><a href="">로그인</a></td>
+					<td><img alt="지구본" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Globe_icon.svg" width="20px" height="20px"></td>
+					<td><a href="">한국어</a></td>
+					<td><a href="">English</a></td>
+				</tr>
+			</table>
+			<nav id="gnav">
+				<ul>
+					<li><img src="../img/bs_logo.png" alt="BS로고" id="logo"></li>
+					<li class="dropdown">
+						<h3 class="dropdown_title"><a>솔루션</a></h3>
+						<div class="dropdown_content">
+							<a href="total_solution.html">전체솔루션</a>
+							<a href="">클라우드</a>
+							<a href="">ERP</a>
+							<a href="">그룹웨어</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<h3 class="dropdown_title"><a>활용사례</a></h3>
+						<div class="dropdown_content">
+							<a href="customer_list.html">현황</a>
+							<a href="customer_interview.html">사례</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<h3 class="dropdown_title"><a>문의</a></h3>
+						<div class="dropdown_content">
+							<a href="inquiry_est.html">견적관련문의</a>
+							<a href="">기술문의</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<h3 class="dropdown_title"><a>고객지원</a></h3>
+						<div class="dropdown_content">
+							<a href="">방문교육</a>
+							<a href="">원격지원</a>
+							<a href="">다운로드</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<h3 class="dropdown_title"><a>회사소개</a></h3>
+						<div class="dropdown_content">
+							<a href="">연혁</a>
+							<a href="">비전</a>
+							<a href="">홍보&보도</a>
+							<a href="">채용정보</a>
+							<a href="">연락처</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- upper area -->
+	<div class="upper_area">
+		<div class="left_menu">
+			<nav>
+				<ul><h3>문의</h3>
+					<li class="selected_menu"><a>견적관련문의</a></li>
+					<li><a>기술문의</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="page_title">
+			<h1>견적 관련 문의하기</h1>
+		</div>
+	</div>
+	
+	<div id="inquiry_estimation">
+		<form id="estimation">
+			<div id="category">
+				<section>
+					<h4>문의 유형</h4>
+					<select id="product_category" name="product_category" >
+						<option value="전체솔루션">전체솔루션</option>
+						<option value="클라우드">클라우드</option>
+						<option value="ERP">ERP</option>
+						<option value="그룹웨어">그룹웨어</option>
+					</select>
+					<select id="product_category_sub" name="product_category_sub" >
+					</select>
+				</section>
+			</div>
+			<div id="text_written">
+				<section>
+					<p>제목<br><input type="text"></p>
+					<p>내용<br><textarea rows="10" cols="50"></textarea></p>
+				</section>
+			</div>
+			<div id="files_attached">
+				<section>
+					파일첨부<input type="button" onclick="addFiles()" value="+">
+					<p>
+						*파일첨부제한<br>
+						-각각 5MB 이하, 3개 파일 이하<br>
+						-첨부 가능한 확장자: jpg,gif,png,pdf
+					</p>
+				</section>
+			</div>
+			<div id="guest_info">
+				<section>
+					<p>
+						<label for="email_addr">이메일 주소</label><br>
+						<input type="text" onclick="removeText()" id="email_addr">
+					</p>
+					<p>
+						<label for="phone_num">전화번호</label><br>
+						<select id="phone_area" name="phone_area">
+							<option value="area_kor">+82</option>
+							<option value="area_eng">+1</option>
+						</select>
+						<input type="text" id="phone_num">
+					</p>
+				</section>
+			</div>
+			<div id="agreement">
+				<section>
+					<input type="checkbox" id="personal_info_agree">
+					<label for="personal_info_agree">개인정보 수집 및 이용에 동의합니다.</label><br>
+					<input type="checkbox" id="marketing_agree">
+					<label for="marketing_agree">마케팅 관련 정보 수신에 동의합니다.</label>
+				</section>
+			</div>
+			<div id="send_esmation_inquiry">
+				<section>
+					<input type="button" value="확인" id="send">
+					<input type="button" value="취소" id="cancel">
+				</section>
+			</div>
+		</form>
+	</div>
+	
+	<!-- footer -->
+	<footer id="footer">
+		<div class="inner">
+			<p><span>Best Solution</span> 주소: 서울특별시 강남구 역삼동 000-00 00빌딩 000호 Tel: 02-000-0000<br>
+			Fax: 02-000-0000 E-mail: info@bs.com<br>Copyright&copy;2022 <span>Best Solution</span> All Right Reserved.</p>
+		</div>	
+	</footer>
+</body>
+</html>

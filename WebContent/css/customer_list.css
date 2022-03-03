@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.page_title {color: black;}
+
+#customer_list {
+	width: 1000px;
+	margin: 0 auto 50px;
+}
+
+.customer_detail {
+	width: 200px; height: 200px;
+	float: left;
+	margin: 20px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.customer_detail td {
+	border: 1px solid navy;
+}
+
+.customer_detail img {
+	width: 50px; height: 50px;
+}
+
+#footer {
+	margin-top: 50px;
+	content: "";
+	display: block;
+	clear: left;
+}

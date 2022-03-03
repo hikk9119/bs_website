@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.page_title {background-image: url("../img/content_title_img1.jpg");}
+	
+.content {
+	width: 1000px;
+	position: relative;
+	display:table;
+	margin: 0 auto 20px;
+	border-spacing: 20px;
+}
+
+.content section {
+	display: table-row;
+	border-bottom: 1px solid gray;
+}
+.content_img {
+	display: table-cell;
+	width: 280px;
+	vertical-align: middle;
+	text-align: center;
+}
+.content_description {
+	display: table-cell;
+	margin: 5px;
+	line-height: 1.5;
+	width: 800px;
+	vertical-align: middle;
+	text-align: left;
+}
+.content_description h3 {
+	font-size: 20px;
+}
+.content .catalog_download {
+	position: absolute;
+	right: 2px; top: 15px;
+	font-size: 0.8em;
+	font-weight: bold;
+}

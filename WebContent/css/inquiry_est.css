@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.page_title {
+	color: black;
+}
+#inquiry_estimation {
+	width: 1000px;
+	margin: 0 auto 20px;
+	background: yellow;
+}
+#estimation {
+	display: table;
+	margin: 0 auto 20px;
+}
+#estimation div {
+	display: table-row;
+}
+#estimation div section {
+	display: table-cell;
+	padding: 20px;
+}

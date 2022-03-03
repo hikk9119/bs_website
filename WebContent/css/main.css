@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+	/* 메인 화면 큰 이미지 */
+	#cimg {
+		height: 280px;
+		margin: 0 auto 20px;
+	}
+	
+	/* 메인 화면 빠른 접속 큰 버튼 */
+	#qnav {
+		height: 130px;
+		margin: 0 auto 20px;
+	}
+	.quickMenu {
+		width: 250px; height: 130px;
+		background-color: navy;
+		text-align: center;
+		color: white;
+		font-weight: bolder;
+		font-size: 20px;
+		left: 10px;
+		margin-right: -3px;
+		margin-left: -3px;
+	}
+	
+	.quickMenu.a {
+		margin-left: 3px;
+	}
+	
+	/* 메인 화면 게시판 요약 */ 
+	#bottom {
+		display: table;
+		height: 200px;
+		margin: 0 auto 50px;
+	}
+	
+	.board {
+		display: table-cell;
+		width: 490px; height: 150px;
+	}
+	
+	.board_title {
+		margin-left: 5px;
+	}
+	
+	.board hr {
+		width: 490px;
+		font-weight: bolder;
+	}
+	
+		/* 뉴스게시판 */
+		.item_title {
+			margin-left: 5px;
+		}
+		.item_content {
+			margin-left: 10px;
+		}
+		
+		/* 공지사항게시판 */
+		.notice_title {
+			width: 370px;
+			margin-left: 5px;
+		}
+		
+		.notice_date {
+			width: 120px;
+		}

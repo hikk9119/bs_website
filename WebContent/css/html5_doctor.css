@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+	
+	/* 열거한 요소의 텍스트 스타일을 플랫화 한다. */
+	html, body, div, span, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	abbr, address, cite, code,
+	del, dfn, em, img, ins, kbd, q, samp,
+	small, strong, sub, sup, var,
+	b, i,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section, summary,
+	time, mark, audio, video {
+	    margin:0;
+	    padding:0;
+	    border:0;
+	    outline:0;
+	    font-size:100%;
+	    vertical-align:baseline;
+	    background:transparent;
+	}
+	
+	/* 행간의 글자높이를 같게한다. */
+	body {
+	    line-height:1;
+	}
+	
+	
+	/* 구 브라우저에서 HTML5 새로운 요소 출력을 최적화 한다. */
+	article,aside,details,figcaption,figure,
+	footer,header,hgroup,menu,nav,section {
+	    display:block;
+	}
+	
+	/* 네비게이션 속의 목록 첫머리 마크를 비표시한다. */
+	nav ul {
+	    list-style:none;
+	}
+	
+	/* 인용문의 ""를 비표시로 한다. */
+	blockquote, q {
+	    quotes:none;
+	}
+	
+	/* 인용문 앞뒤에 공백을 두는 것으로 초기화한다. */
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+	    content:'';
+	    content:none;
+	}
+	
+	/* 링크거는 앵커태그의 스타일을 초기화한다. */
+	a {
+	    margin:0;
+	    padding:0;
+	    font-size:100%;
+	    vertical-align:baseline;
+	    background:transparent;
+	}
+	
+	/* 필요에 맞게 색상 변경 */
+	ins {
+	    background-color:#ff9;
+	    color:#000;
+	    text-decoration:none;
+	}
+	
+	/* 필요에 맞게 색상 변경 */
+	mark {
+	    background-color:#ff9;
+	    color:#000;
+	    font-style:italic;
+	    font-weight:bold;
+	}
+	
+	del {
+	    text-decoration: line-through;
+	}
+	
+	abbr[title], dfn[title] {
+	    border-bottom:1px dotted;
+	    cursor:help;
+	}
+	
+	/* 인접하는 셀의 border를 겹쳐 표시한다 */
+	table {
+	    border-collapse:collapse;
+	    border-spacing:0;
+	}
+	
+	/* 필요에 맞게 테두리 색상 변경 */
+	hr {
+	    display:block;
+	    height:1px;
+	    border:0;  
+	    border-top:1px solid #cccccc;
+	    margin:1em 0;
+	    padding:0;
+	}
+	
+	input, select {
+	    vertical-align:middle;
+	}
