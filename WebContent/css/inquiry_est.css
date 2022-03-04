@@ -6,7 +6,6 @@
 #inquiry_estimation {
 	width: 1000px;
 	margin: 0 auto 20px;
-	background: yellow;
 }
 #estimation {
 	display: table;
@@ -18,4 +17,18 @@
 #estimation div section {
 	display: table-cell;
 	padding: 20px;
+}
+#send_esmation_inquiry {
+	margin: 0 auto 20px;
+	text-align: center;
+}
+#send_esmation_inquiry button {
+	background-color: navy;
+	color: white;
+	font-weight: bolder;
+	width: 100px; height: 40px;
+	border-radius: 3px;
+}
+#send_esmation_inquiry #cancel {
+	background-color: Gainsboro;
 }
