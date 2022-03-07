@@ -1,42 +1,22 @@
 @charset "UTF-8";
+	
+.sub_nav {
+	width: 1000px;
+	height: 25px;
+	text-align: left;
+	margin: 0 auto;
+	border: 1px solid navy;
+}
 
-	.upper_area {
-		display: table;
-		width: 1000px; height: 140px;
-		margin: 0 auto 20px;
-	}
+.sub_nav li {
+	float: left;
+	margin-left: 10px;
+}
+
+.sub_nav li:not(:first-child) {
+	padding-left: 10px;
+	background: url("../img/ico_arw01.png") left center no-repeat;
+}
+.sub_nav h3 {
 	
-	.left_menu {
-		display: table-cell;
-		width: 280px;
-		text-align: left;
-		font-weight: bolder;
-	}
-	.left_menu h3 {
-		
-	}
-	.left_menu li {
-		line-height: 1.5;
-	}
-	
-	.selected_menu {
-		background-color: navy;
-		width: 200px; height: 25px;
-		color: white;
-	}
-	
-	.page_title {
-		display: table-cell;
-		width: 800px; height: 140px;
-		text-align: center;
-		vertical-align: middle;
-		line-height: 2;
-		color: white;
-		font-weight: bolder;
-		background-repeat: no-repeat;
-	}
-	
-	.page_title h1 {
-		font-size: 32px;
-	}
-	
+}
