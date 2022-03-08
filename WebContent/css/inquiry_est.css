@@ -5,7 +5,6 @@
 	width: 1000px;
 	text-align: center;
 	margin: 0 auto;
-	border: 1px solid navy;
 	clear: both;
 }
 
@@ -17,7 +16,6 @@
 	color: black;
 	font-weight: bolder;
 	background-repeat: no-repeat;
-	border: 1px solid navy;
 }
 .page_title h1 {
 	font-size: 32px;
@@ -27,15 +25,15 @@
 	display: table;
 	width: 1000px;
 	margin: 0 auto 20px;
-	background-color: rgba(0,0,128,0.3);
-	border: 1px solid navy;
+	/* background-color: rgba(0,0,128,0.3); */
 }
 #estimation div {
 	display: table-row;
 }
 #estimation div section {
 	display: table-cell;
-	padding: 20px;
+	/* padding: 20px; */
+	border: 1px solid navy;
 }
 #files_attached p {
 	font-size: 10px;

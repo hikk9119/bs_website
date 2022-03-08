@@ -16,13 +16,12 @@
 	/* header */
 	#top {
 		position: relative;
-		width: 1000px; height: 100px;
-		margin: 20px auto;
-		border: 1px solid navy;
+		width: 1000px; height: 80px;
+		margin: 0px auto;
 	}
 	#righttop {
 		position: absolute;
-		top: 0px;
+		top: 5px;
 		right: 0px;
 		vertical-align:middle;
 		text-align: center;
@@ -33,16 +32,16 @@
 		text-decoration: none;
 		color: black;
 	}
-	#logo {
-		display:table-cell;
-		width: 200px;
-	}
+
 	#gnav {
 		position: absolute;
 		display: table;
 		width: 1000px; height: 50px;
-		margin: 30px auto 0;
-		border: 1px solid navy;
+		margin: 35px auto 0;
+	}
+	#logo {
+		display:table-cell;
+		width: 200px;
 	}
 	/* #logo_nav_gap {
 		width: 0px; height: 40px;

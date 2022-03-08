@@ -6,9 +6,17 @@
 <link rel="stylesheet" type="text/css" href="../css/base.css">
 <link rel="stylesheet" type="text/css" href="../css/sub_menu_top.css">
 <link rel="stylesheet" type="text/css" href="../css/inquiry_est.css">
+<link rel="stylesheet" href="../js/jqtransform/jqtransformplugin/jqtransform.css">
 <title>견적 관련 문의</title>
 <script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
 <script type="text/javascript" src="../js/iquiry_est.js"></script>
+<script type="text/javascript" src="../js/jqtransform/jqtransformplugin/requiered/jquery.js"></script>
+<script type="text/javascript" src="../js/jqtransform/jqtransformplugin/jquery.jqtransform.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('form').jqTransform({imgPath:'jqtransform/jqtransformplugin/img/'});
+	});
+</script>
 </head>
 <body>
 	<!-- header -->
@@ -19,12 +27,12 @@
 					<td>
 						<form action="" method="">
 							<label for="search"><img alt="돋보기" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Search_Icon.svg" width="20px" height="20px"></label>
-							<input type="text" id="search" size="12" value="검색">
+							<input type="text" id="search" size="12" value="검색">&nbsp;
 						</form>
 					</td>
-					<td><a href="">로그인</a></td>
-					<td><img alt="지구본" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Globe_icon.svg" width="20px" height="20px"></td>
-					<td><a href="">한국어</a></td>
+					<td><a href="">로그인</a>&nbsp;</td>
+					<td><img alt="지구본" src="../img/Globe_icon.png" width="15px" height="15px">&nbsp;</td>
+					<td><a href="">한국어</a>&nbsp;</td>
 					<td><a href="">English</a></td>
 				</tr>
 			</table>
@@ -102,6 +110,8 @@
 						<option value="ERP">ERP</option>
 						<option value="그룹웨어">그룹웨어</option>
 					</select>
+				</section>
+				<section>
 					<select id="product_category_sub" name="product_category_sub" >
 					</select>
 				</section>
