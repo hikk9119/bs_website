@@ -102,8 +102,8 @@
 		</div>
 		<form id="estimation">
 			<div id="category">
-				<section>
-					<h4>문의 유형</h4>
+				<section class="inquiry_cell">
+					<label>문의 유형</label>
 					<select id="product_category" name="product_category" onchange="subChange()">
 						<option value="전체솔루션">전체솔루션</option>
 						<option value="클라우드">클라우드</option>
@@ -111,7 +111,7 @@
 						<option value="그룹웨어">그룹웨어</option>
 					</select>
 				</section>
-				<section>
+				<section class="inquiry_cell">
 					<select id="product_category_sub" name="product_category_sub" >
 					</select>
 				</section>
@@ -119,12 +119,17 @@
 			<div id="text_written">
 				<section>
 					<p><label>제목</label><input type="text"></p><br>
+				</section>
+				<section>
 					<p><label>내용</label></p><textarea rows="10" cols="50"></textarea>
 				</section>
 			</div>
 			<div id="files_attached">
 				<section>
-					파일첨부<input type="button" onclick="addFiles()" value="+">
+					<label>파일첨부</label>
+					<input type="button" onclick="addFiles()" value="+">
+				</section>
+				<section>
 					<p>
 						*파일첨부제한<br>
 						-각각 5MB 이하, 3개 파일 이하<br>
@@ -138,6 +143,8 @@
 						<label for="email_addr">이메일 주소</label>
 						<input type="text" onclick="removeText()" id="email_addr">
 					</p>
+				</section>
+				<section>
 					<p>
 						<label for="phone_num">전화번호</label>
 						<select id="phone_area" name="phone_area">

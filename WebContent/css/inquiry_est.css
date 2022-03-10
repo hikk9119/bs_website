@@ -22,19 +22,23 @@
 }
 	
 #estimation {
-	display: table;
-	width: 1000px;
+	display: block;
+	width: 600px;
 	margin: 0 auto 20px;
-	/* background-color: rgba(0,0,128,0.3); */
-}
-#estimation div {
-	display: table-row;
-}
-#estimation div section {
-	display: table-cell;
-	/* padding: 20px; */
 	border: 1px solid navy;
+	background-color: rgba(0,0,128,0.3);
 }
+#estimation div{
+	display: block;
+	margin: 5px auto;
+}
+#estimation div .inquiry_cell {
+	display: inline-block;
+	margin: 10px auto;
+	padding: 5px;
+	float: left;
+}
+#text_written {clear: both;}
 #files_attached p {
 	font-size: 10px;
 	color: Gainsboro;
