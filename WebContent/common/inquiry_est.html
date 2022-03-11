@@ -101,9 +101,13 @@
 			<h1>견적 관련 문의하기</h1>
 		</div>
 		<form id="estimation">
+			<table>
 			<div id="category">
+			<tr>
+				<td>
 				<section class="inquiry_cell">
-					<label>문의 유형</label>
+					<label>문의 유형</label></td>
+					<td>
 					<select id="product_category" name="product_category" onchange="subChange()">
 						<option value="전체솔루션">전체솔루션</option>
 						<option value="클라우드">클라우드</option>
@@ -111,39 +115,62 @@
 						<option value="그룹웨어">그룹웨어</option>
 					</select>
 				</section>
+				</td>
+				<td>
 				<section class="inquiry_cell">
 					<select id="product_category_sub" name="product_category_sub" >
 					</select>
 				</section>
+				</td>
+			</tr>
 			</div>
 			<div id="text_written">
+				<tr>
+				<td>
 				<section>
-					<p><label>제목</label><input type="text"></p><br>
+					<p><label>제목</label></td>
+					<td colspan="2"><input type="text"></p><br>
 				</section>
+				</td>
+				<td></td>
+				</tr>
+				<tr>
+				<td colspan="2">
 				<section>
 					<p><label>내용</label></p><textarea rows="10" cols="50"></textarea>
 				</section>
+				</td>
+				<td></td>
+				</tr>
 			</div>
 			<div id="files_attached">
+				<tr>
+				<td colspan="2">
 				<section>
 					<label>파일첨부</label>
 					<input type="button" onclick="addFiles()" value="+">
-				</section>
-				<section>
 					<p>
 						*파일첨부제한<br>
 						-각각 5MB 이하, 3개 파일 이하<br>
 						-첨부 가능한 확장자: jpg,gif,png,pdf
 					</p>
 				</section>
+				</td><td></td>
+				</tr>
 			</div>
 			<div id="guest_info">
+				<tr>
+				<td colspan="2">
 				<section>
 					<p>
 						<label for="email_addr">이메일 주소</label>
 						<input type="text" onclick="removeText()" id="email_addr">
 					</p>
 				</section>
+				</td><td></td>
+				</tr>
+				<tr>
+				<td colspan="2">
 				<section>
 					<p>
 						<label for="phone_num">전화번호</label>
@@ -154,21 +181,32 @@
 						<input type="text" id="phone_num">
 					</p>
 				</section>
+				</td><td></td>
+				</tr>
 			</div>
 			<div id="agreement">
+				<tr>
+				<td colspan="2">
 				<section>
 					<input type="checkbox" id="personal_info_agree">
 					<label for="personal_info_agree">개인정보 수집 및 이용에 동의합니다.</label><br>
 					<input type="checkbox" id="marketing_agree">
 					<label for="marketing_agree">마케팅 관련 정보 수신에 동의합니다.</label>
 				</section>
+				</td><td></td>
+				</tr>
 			</div>
 			<div id="send_esmation_inquiry">
+				<tr>
+				<td colspan="2">
 				<section>
 					<button value="확인" id="send">확인</button>
 					<button value="취소" id="cancel">취소</button>
 				</section>
+				</td><td></td>
+				</tr>
 			</div>
+			</table>
 		</form>
 	</div>
 	

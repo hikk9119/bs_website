@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
 #inquiry_estimation {
-	display: table;
 	width: 1000px;
 	text-align: center;
 	margin: 0 auto;
-	clear: both;
 }
 
 .page_title {
@@ -21,24 +19,23 @@
 	font-size: 32px;
 }
 	
-#estimation {
-	display: block;
+#estimation table{
 	width: 600px;
 	margin: 0 auto 20px;
 	border: 1px solid navy;
-	background-color: rgba(0,0,128,0.3);
+	/* background-color: rgba(0,0,128,0.3); */
 }
-#estimation div{
-	display: block;
-	margin: 5px auto;
+#estimation table td{
+	border: 1px solid navy;
+}
+#estimation table .rowspan{
+	
 }
 #estimation div .inquiry_cell {
-	display: inline-block;
 	margin: 10px auto;
 	padding: 5px;
-	float: left;
 }
-#text_written {clear: both;}
+/* #text_written {clear: both;} */
 #files_attached p {
 	font-size: 10px;
 	color: Gainsboro;
