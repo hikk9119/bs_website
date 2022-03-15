@@ -5,7 +5,18 @@
 <link rel="stylesheet" type="text/css" href="../css/html5_doctor.css">
 <link rel="stylesheet" type="text/css" href="../css/base.css">
 <link rel="stylesheet" type="text/css" href="../css/sub_menu_top.css">
+<link rel="stylesheet" type="text/css" href="../css/sign_up.css">
+<link rel="stylesheet" href="../js/jqtransform/jqtransformplugin/jqtransform.css">
 <title>회원가입</title>
+<script type="text/javascript" src="../js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="../js/iquiry_est.js"></script>
+<script type="text/javascript" src="../js/jqtransform/jqtransformplugin/requiered/jquery.js"></script>
+<script type="text/javascript" src="../js/jqtransform/jqtransformplugin/jquery.jqtransform.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('form').jqTransform({imgPath:'jqtransform/jqtransformplugin/img/'});
+	});
+</script>
 </head>
 <body>
 	<!-- header -->
@@ -75,17 +86,35 @@
 	</header>
 	
 	<!-- main -->
+	<div class="page_title">
+			<h1>회원가입</h1>
+		</div>
+	<form action="" id="signUp">
+		<table>
+		<tr>
+			<td><label for='member_code'>회원코드</label></td>
+			<td><input type="text" name='member_code'></td>
+		</tr>
+		<tr>
+			<td><label>이메일</label></td>
+			<td><input type="text"></td>
+		</tr>
+		
+		</table>
+	</form>
 	
 	
 	<!-- upper area -->
-	<div class="sub_nav">
-		<nav>
+	
+	<nav>
+		<div class="sub_nav">
 			<ul>
 				<li><h3><a>로그인</a></h3></li>
 				<li><a>회원가입</a></li>
 			</ul>
-		</nav>
-	</div>
+		</div>
+	</nav>
+	
 	
 	<!-- footer -->
 	<footer id="footer">
