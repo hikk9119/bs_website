@@ -8,13 +8,20 @@
 	color: black;
 	font-weight: bolder;
 	background-repeat: no-repeat;
+	margin: 0 auto;
+	border: 1px solid navy;
 }
 .page_title h1 {
 	font-size: 32px;
 }
 
-table {
+#sign_up table {
 	width: 600px;
 	margin: 0 auto 20px;
 	border: 1px solid navy;
+}
+#sign_up td {
+	border: 1px solid navy;
+	height: 50px;
+	background-color: rbga(0,0,125,0.3);
 }
