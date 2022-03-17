@@ -12,7 +12,6 @@
 	text-align: center;
 	line-height: 2;
 	color: black;
-	font-weight: bolder;
 	background-repeat: no-repeat;
 }
 .page_title h1 {
@@ -20,22 +19,23 @@
 }
 	
 #estimation table{
-	width: 600px;
+	width: 800px;
 	margin: 0 auto 20px;
 	border: 1px solid navy;
+	text-align: left;
+	vertical-align: top;
 	/* background-color: rgba(0,0,128,0.3); */
 }
 #estimation table td{
 	border: 1px solid navy;
+	padding: 5px;
+	width: 400px;
 }
-#estimation table .rowspan{
-	
-}
-#estimation div .inquiry_cell {
+/* #estimation div .inquiry_cell {
 	margin: 10px auto;
 	padding: 5px;
 }
-/* #text_written {clear: both;} */
+#text_written {clear: both;}
 #files_attached p {
 	font-size: 10px;
 	color: Gainsboro;
@@ -43,14 +43,14 @@
 #send_esmation_inquiry {
 	margin: 0 auto 20px;
 	text-align: center;
-}
-#send_esmation_inquiry button {
+} */
+#confirmBtn button {
 	background-color: navy;
 	color: white;
 	font-weight: bolder;
 	width: 100px; height: 40px;
 	border-radius: 3px;
 }
-#send_esmation_inquiry #cancel {
+#confirmBtn #cancel {
 	background-color: Gainsboro;
 }

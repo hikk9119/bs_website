@@ -6,22 +6,25 @@
 	text-align: center;
 	line-height: 2;
 	color: black;
-	font-weight: bolder;
 	background-repeat: no-repeat;
 	margin: 0 auto;
-	border: 1px solid navy;
+	background-color: Gainsboro; 
 }
 .page_title h1 {
 	font-size: 32px;
 }
 
 #sign_up table {
-	width: 600px;
+	width: 800px;
 	margin: 0 auto 20px;
-	border: 1px solid navy;
+	text-align: center;
+	vertical-align: middle;
 }
 #sign_up td {
-	border: 1px solid navy;
 	height: 50px;
 	background-color: rbga(0,0,125,0.3);
+}
+#sign_up td span {
+	color: red;
+	font-weight: bolder;
 }
