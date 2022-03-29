@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.page_title {
+	width: 1000px; height: 100px;
+	padding-top: 54px;
+	text-align: center;
+	line-height: 2;
+	color: black;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	background-color: Gainsboro; 
+}
+.page_title h1 {
+	font-size: 32px;
+}
+
+#logIn table {
+	margin: 150px auto;
+	background-color: navy;
+	border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid navy;
+}
+
+#logIn table td {
+	padding: 10px;
+	color: white;
+}

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+.page_title {
+	width: 1000px; height: 140px;
+	padding-top: 54px;
+	text-align: center;
+	line-height: 2;
+	color: black;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	/* background-color: Gainsboro;  */
+}
+.page_title h1 {
+	font-size: 32px;
+}
+
+#question table {
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: middle;
+}
+#question td {
+	width: 200px;
+	height: 50px;
+	vertical-align: middle;
+	border-right: 1px solid navy;
+}
+#question tr {
+	border-bottom: 1px solid navy;
+}
+#question tr:first-child {
+	background-color: rgba(0,0,128,0.3);
+}
+#question tr:last-child {
+	border-bottom: none;
+}
+#question td:last-child {
+	border-right: none;
+}
+#question #board{
+	width: 800px;
+	padding: 10px;
+	margin: 0px auto;
+	border: 1px solid;
+}
+#writeBtn {
+	right: 5px;
+	/* border: none; */
+	display: inline-block;
+	float: right;
+}
+#writeBtn button {
+	border: none;
+	background-color: navy;
+	width: 100px;
+	color: white;
+	border-radius: 5px;
+}
+#searchBtn {
+	margin: 0 auto;
+	border: none;
+	display: inline-block;
+}

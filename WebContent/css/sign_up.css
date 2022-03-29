@@ -8,14 +8,14 @@
 	color: black;
 	background-repeat: no-repeat;
 	margin: 0 auto;
-	background-color: Gainsboro; 
+	/* background-color: Gainsboro;  */
 }
 .page_title h1 {
 	font-size: 32px;
 }
 
 #sign_up table {
-	width: 800px;
+	/* width: 800px; */
 	margin: 0 auto 20px;
 	text-align: center;
 	vertical-align: middle;
@@ -23,8 +23,35 @@
 #sign_up td {
 	height: 50px;
 	background-color: rbga(0,0,125,0.3);
+	/* border-bottom: 1px solid navy; */
 }
 #sign_up td span {
 	color: red;
 	font-weight: bolder;
+}
+#sign_up div{
+	width: 800px;
+	padding: 10px;
+	margin: 0px auto;
+	border: 1px solid;
+}
+#sign_up tr td>input{
+	padding: 4px;
+}
+#join {
+	width: 100px; height: 40px;
+	background-color: navy;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bolder;
+	color: white;
+	border: none;
+}
+#cancelJoin {
+	width: 100px; height: 40px;
+	background-color: lightgray;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bolder;
+	border: none;
 }
