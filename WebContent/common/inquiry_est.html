@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="../css/base.css">
 <link rel="stylesheet" type="text/css" href="../css/sub_menu_top.css">
 <link rel="stylesheet" type="text/css" href="../css/inquiry_est.css">
-<link rel="stylesheet" href="../js/jqtransform/jqtransformplugin/jqtransform.css">
 <title>견적 관련 문의</title>
 </head>
 <body>
@@ -87,89 +86,93 @@
 		</div>
 	
 	<!-- main -->
-	<div id="inquiry_estimation">
-		<div class="page_title">
-			<h1>견적 관련 문의하기</h1>
-			<p>문의 남겨주시면 빠른 시일내에 연락드리겠습니다.</p>
+	<main>
+		<div id="inquiry_estimation">
+			<div class="page_title">
+				<h1>견적 관련 문의하기</h1>
+				<p>문의 남겨주시면 빠른 시일내에 연락드리겠습니다.</p>
+			</div>
+			<form id="estimation">
+				<table>
+					<colgroup>
+						<col width='20%'><col width='80%'>
+					</colgroup>
+					<tr>
+						<td><label>문의 유형</label></td>
+						<td>
+							<select id="product_category" name="product_category" onchange="subChange()">
+								<option value="전체솔루션">전체솔루션</option>
+								<option value="클라우드">클라우드</option>
+								<option value="ERP">ERP</option>
+								<option value="그룹웨어">그룹웨어</option>
+							</select>
+							<select id="product_category_sub" name="product_category_sub" >
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label>제목</label></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td><label>내용</label></td>
+						<td>
+							<textarea rows="10" cols="20"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>파일첨부</label>
+							<input type="file" onclick="addFiles()" multiple="multiple">
+						</td>
+						<td>
+							<p id='addFileDesc'>
+								*파일첨부제한<br>
+								-각각 5MB 이하, 3개 파일 이하<br>
+								-첨부 가능한 확장자: jpg,gif,png,pdf
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="email_addr">이메일 주소</label></td>
+						<td>
+							<input type="text" onclick="removeText()" id="email_addr">
+						</td>
+					</tr>
+					<tr>
+						<td><label for="phone_num">전화번호</label></td>
+						<td>
+							<select id="phone_area" name="phone_area">
+								<option value="area_kor">+82</option>
+								<option value="area_eng">+1</option>
+							</select>
+							<input type="text" id="phone_num">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="checkbox" id="personal_info_agree">
+							<label for="personal_info_agree">개인정보 수집 및 이용에 동의합니다.</label><br>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input type="checkbox" id="marketing_agree">
+							<label for="marketing_agree">마케팅 관련 정보 수신에 동의합니다.</label>
+						</td>
+					</tr>
+					<tr>
+						<td id='confirmBtn' colspan="2">
+							<button value="확인" id="send">확인</button>
+							<button value="취소" id="cancel">취소</button>
+						</td>
+					</tr>
+				</table>
+			</form>
 		</div>
-		<form id="estimation">
-			<table>
-				<tr>
-					<td width="200px"><label>문의 유형</label></td>
-					<td>
-						<select id="product_category" name="product_category" onchange="subChange()">
-							<option value="전체솔루션">전체솔루션</option>
-							<option value="클라우드">클라우드</option>
-							<option value="ERP">ERP</option>
-							<option value="그룹웨어">그룹웨어</option>
-						</select>
-						<select id="product_category_sub" name="product_category_sub" >
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td><label>제목</label></td>
-					<td><input type="text"></td>
-				</tr>
-				<tr>
-					<td><label>내용</label></td>
-					<td>
-						<textarea rows="10" cols="20"></textarea>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label>파일첨부</label>
-						<input type="button" onclick="addFiles()" value="+">
-					</td>
-					<td>
-						<p>
-							*파일첨부제한<br>
-							-각각 5MB 이하, 3개 파일 이하<br>
-							-첨부 가능한 확장자: jpg,gif,png,pdf
-						</p>
-					</td>
-				</tr>
-				<tr>
-					<td><label for="email_addr">이메일 주소</label></td>
-					<td>
-						<input type="text" onclick="removeText()" id="email_addr">
-					</td>
-				</tr>
-				<tr>
-					<td><label for="phone_num">전화번호</label></td>
-					<td>
-						<select id="phone_area" name="phone_area">
-							<option value="area_kor">+82</option>
-							<option value="area_eng">+1</option>
-						</select>
-						<input type="text" id="phone_num">
-					</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>
-						<input type="checkbox" id="personal_info_agree">
-						<label for="personal_info_agree">개인정보 수집 및 이용에 동의합니다.</label><br>
-					</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td>
-						<input type="checkbox" id="marketing_agree">
-						<label for="marketing_agree">마케팅 관련 정보 수신에 동의합니다.</label>
-					</td>
-				</tr>
-				<tr>
-					<td> </td>
-					<td id='confirmBtn'>
-						<button value="확인" id="send">확인</button>
-						<button value="취소" id="cancel">취소</button>
-					</td>
-				</tr>
-			</table>
-		</form>
-	</div>
+	</main>
 	
 	<!-- footer -->
 	<footer id="footer">

@@ -8,31 +8,35 @@
 	color: black;
 	background-repeat: no-repeat;
 	margin: 0 auto;
-	/* background-color: Gainsboro;  */
 }
 .page_title h1 {
 	font-size: 32px;
 }
 
 #sign_up table {
-	/* width: 800px; */
-	margin: 0 auto 20px;
+	margin: 0 auto;
 	text-align: center;
 	vertical-align: middle;
 }
 #sign_up td {
 	height: 50px;
-	background-color: rbga(0,0,125,0.3);
-	/* border-bottom: 1px solid navy; */
+	text-align: center;
 }
-#sign_up td span {
+#sign_up input {
+	width: 85%;
+}
+.ast {
 	color: red;
 	font-weight: bolder;
+}
+#pwDesc {
+	font-size: 0.8em;
+	font-weight: lighter;
 }
 #sign_up div{
 	width: 800px;
 	padding: 10px;
-	margin: 0px auto;
+	margin: 0px auto 20px;
 	border: 1px solid;
 }
 #sign_up tr td>input{

@@ -2,7 +2,6 @@
 
 #inquiry_estimation {
 	width: 1000px;
-	text-align: center;
 	margin: 0 auto;
 }
 
@@ -19,7 +18,7 @@
 }
 	
 #estimation table{
-	width: 800px;
+	width: 600px;
 	margin: 0 auto 20px;
 	border: 1px solid navy;
 	text-align: left;
@@ -29,7 +28,11 @@
 #estimation table td{
 	border: 1px solid navy;
 	padding: 5px;
-	width: 400px;
+	/* width: 400px; */
+}
+#addFileDesc {
+	font-size: small;
+	font-weight: lighter;
 }
 /* #estimation div .inquiry_cell {
 	margin: 10px auto;
@@ -44,12 +47,16 @@
 	margin: 0 auto 20px;
 	text-align: center;
 } */
+#confirmBtn {
+	text-align: center;
+}
 #confirmBtn button {
 	background-color: navy;
 	color: white;
 	font-weight: bolder;
 	width: 100px; height: 40px;
 	border-radius: 3px;
+	border: none;
 }
 #confirmBtn #cancel {
 	background-color: Gainsboro;

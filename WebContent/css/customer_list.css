@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
-.page_title {color: black;}
+.page_title {
+	width: 1000px; height: 140px;
+	font-size: 2em;
+	padding-top: 54px;
+	text-align: center;
+	line-height: 2;
+	color: black;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
 
 #customer_list {
 	width: 1000px;
@@ -11,12 +20,12 @@
 	width: 200px; height: 200px;
 	float: left;
 	margin: 20px;
-	vertical-align: middle;
 	text-align: center;
 }
 
 .customer_detail td {
 	border: 1px solid navy;
+	vertical-align: middle;
 }
 
 .customer_detail img {

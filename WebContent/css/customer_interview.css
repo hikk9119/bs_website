@@ -1,12 +1,22 @@
 @charset "UTF-8";
 
 .page_title {
+	width: 1000px; height: 140px;
+	font-size: 2em;
+	padding-top: 54px;
+	text-align: center;
+	line-height: 2;
 	color: black;
+	background-repeat: no-repeat;
+	margin: 0 auto;
 }
 #customer_interview {
 	width: 1000px;
 	margin: 0 auto 50px;
 	display: table;
+}
+#customer_interview article section>h3 {
+	border-bottom: 1px solid navy;
 }
 
 .interview_summary {

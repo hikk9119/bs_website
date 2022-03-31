@@ -2,14 +2,14 @@
 
 	/* 메인 화면 큰 이미지 */
 	#cimg {
-		height: 280px;
-		margin: 0 auto 20px;
+		width: 1000px; height: 280px;
+		margin: 5px auto 20px;
 	}
 	
 	/* 메인 화면 빠른 접속 큰 버튼 */
 	#qnav {
-		height: 130px;
-		margin: 0 auto 20px;
+		width: 1000px; height: 130px;
+		margin: 0 auto 20px auto;
 	}
 	.quickMenu {
 		width: 250px; height: 130px;

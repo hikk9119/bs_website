@@ -6,6 +6,9 @@
 <link rel="stylesheet" type="text/css" href="../css/base.css">
 <link rel="stylesheet" type="text/css" href="../css/sub_menu_top.css">
 <link rel="stylesheet" type="text/css" href="../css/sign_up.css">
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/sign_up.js"></script>
+
 <title>회원가입</title>
 </head>
 <body>
@@ -93,28 +96,33 @@
 	<form action="" id="sign_up">
 	<div>
 		<table>
+		<colgroup><col width='20%'><col width='80%'></colgroup>
 		<tr>
-			<td><label for='member_code'><span>*</span>회원코드</label></td>
+			<td><label for='member_code'><span class='ast'>*</span>회원코드</label></td>
 			<td><input type="text" id='member_code'></td>
 		</tr>
 		<tr>
-			<td><label><span>*</span>이메일</label></td>
+			<td><label><span class='ast'>*</span>이메일</label></td>
 			<td><input type="text"></td>
 		</tr>
 		<tr>
-			<td><label><span>*</span>비밀번호</label></td>
-			<td><input type="password"></td>
+			<td><label for='password1'><span class='ast'>*</span>비밀번호</label></td>
+			<td>
+				<input type="password" id='password1' placeholder="6~12자리 특수문자 1개 이상,알파벳 대/소문자 1개 이상 구성"
+				onfocus="this.placeholder=''" onblur="this.placeholder='6~12자리 특수문자 1개 이상,알파벳 대/소문자 1개 이상 구성'">
+				<!-- <span id="pwDesc">(6~12자리 특수문자 1개 이상,<br> 알파벳 대문자 및 소문자 1개 이상 구성)</span> -->
+			</td>
 		</tr>
 		<tr>
-			<td><label><span>*</span>비밀번호확인</label></td>
-			<td><input type="password"></td>
+			<td><label for='password2'><span class='ast'>*</span>비밀번호확인</label></td>
+			<td><input type="password" id='password2'></td>
 		</tr>
 		<tr>
-			<td><label><span>*</span>이름</label></td>
+			<td><label><span class='ast'>*</span>이름</label></td>
 			<td><input type="text"></td>
 		</tr>
 		<tr>
-			<td><label><span>*</span>전화번호</label></td>
+			<td><label><span class='ast'>*</span>전화번호</label></td>
 			<td><input type="text"></td>
 		</tr>
 		<tr>
@@ -122,7 +130,7 @@
 			<td><input type="text"></td>
 		</tr>
 		<tr>
-			<td><label><span>*</span>회사명</label></td>
+			<td><label><span class='ast'>*</span>회사명</label></td>
 			<td><input type="text"></td>
 		</tr>
 		<tr>
@@ -130,7 +138,7 @@
 			<td><input type="text"></td>
 		</tr>
 		<tr>
-			<td><label><span>*</span>부서명</label></td>
+			<td><label><span class='ast'>*</span>부서명</label></td>
 			<td><input type="text"></td>
 		</tr>
 		<tr>
